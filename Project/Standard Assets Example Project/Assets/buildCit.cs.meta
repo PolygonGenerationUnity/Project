@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 14c3ba0040069fd42a16a61d7ef1e05f
+timeCreated: 1486626104
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - xstreets: {fileID: 1000010697216006, guid: 73d72867a6c99d6419cc6a4d690cfb63, type: 2}
+  - zstreets: {fileID: 1000010204037602, guid: 44845d7c170ed234c8c56dc6594cdcc0, type: 2}
+  - crossroad: {fileID: 1000011803332288, guid: ab7da53a28e7b2447991ff5e208a8665,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
