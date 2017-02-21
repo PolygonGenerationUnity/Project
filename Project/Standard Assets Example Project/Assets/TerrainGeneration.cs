@@ -9,8 +9,8 @@ public class TerrainGeneration : MonoBehaviour {
 
     void Start () {
         myTerrain = Terrain.activeTerrain;
-        heightmap = new Texture2D(512,512);
-        heightmap.LoadImage(File.ReadAllBytes("C:\\heightmap.jpeg"));
+        heightmap = new Texture2D(2049,2049);
+        heightmap.LoadImage(File.ReadAllBytes("C:\\Heightmap2.png"));
     }
 	
 	void Update () {
@@ -28,11 +28,11 @@ public class TerrainGeneration : MonoBehaviour {
 
             TerrainData TD = myTerrain.terrainData;
             float[,] HeightMap = new float[TD.heightmapWidth, TD.heightmapHeight];
-            for (int x = 0; x < 512; x++)
+            for (int x = 0; x < 2049; x++)
             {
-                for (int y = 0; y < 512; y++)
+                for (int y = 0; y < 2049; y++)
                 {
-                    HeightMap[x, y] = heightmap.GetPixel(x,y).grayscale / 12.5f;
+                    HeightMap[x, y] = heightmap.GetPixel(x,y).grayscale;
                 }
             }
             isUsed = true;
